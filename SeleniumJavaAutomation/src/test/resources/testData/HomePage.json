@@ -1,0 +1,118 @@
+{
+  "homePage": [
+    {
+      "testCaseId": "HP_SEARCH_001",
+      "description": "Valid search returns results",
+      "searchTerm": "laptop",
+      "expectedResultsVisible": true,
+      "expectedMinResults": 1
+    },
+    {
+      "testCaseId": "HP_SEARCH_002",
+      "description": "Empty search shows validation message",
+      "searchTerm": "",
+      "expectedResultsVisible": false,
+      "expectedMinResults": 0
+    },
+    {
+      "testCaseId": "HP_SEARCH_003",
+      "description": "Special characters handled gracefully",
+      "searchTerm": "<script>alert(1)</script>",
+      "expectedResultsVisible": false,
+      "expectedMinResults": 0
+    },
+    {
+      "testCaseId": "HP_SEARCH_004",
+      "description": "Partial keyword returns relevant results",
+      "searchTerm": "head",
+      "expectedResultsVisible": true,
+      "expectedMinResults": 1
+    }
+  ],
+  "navigation": [
+    {
+      "testCaseId": "HP_NAV_001",
+      "description": "Home link navigates to homepage",
+      "linkText": "Home",
+      "expectedUrlContains": "/home",
+      "expectedPageTitle": "Home"
+    },
+    {
+      "testCaseId": "HP_NAV_002",
+      "description": "About link navigates to about page",
+      "linkText": "About",
+      "expectedUrlContains": "/about",
+      "expectedPageTitle": "About Us"
+    },
+    {
+      "testCaseId": "HP_NAV_003",
+      "description": "Contact link navigates to contact page",
+      "linkText": "Contact",
+      "expectedUrlContains": "/contact",
+      "expectedPageTitle": "Contact Us"
+    },
+    {
+      "testCaseId": "HP_NAV_004",
+      "description": "Products link navigates to products page",
+      "linkText": "Products",
+      "expectedUrlContains": "/products",
+      "expectedPageTitle": "Products"
+    }
+  ],
+  "login": [
+    {
+      "testCaseId": "HP_LOGIN_001",
+      "description": "Valid credentials logs user in",
+      "username": "testuser@example.com",
+      "password": "Test@1234",
+      "expectedLoggedIn": true,
+      "expectedWelcomeMessage": "Welcome, Test User"
+    },
+    {
+      "testCaseId": "HP_LOGIN_002",
+      "description": "Invalid password shows error message",
+      "username": "testuser@example.com",
+      "password": "wrongpassword",
+      "expectedLoggedIn": false,
+      "expectedErrorMessage": "Invalid username or password"
+    },
+    {
+      "testCaseId": "HP_LOGIN_003",
+      "description": "Unregistered email shows error message",
+      "username": "unknown@example.com",
+      "password": "Test@1234",
+      "expectedLoggedIn": false,
+      "expectedErrorMessage": "Invalid username or password"
+    },
+    {
+      "testCaseId": "HP_LOGIN_004",
+      "description": "Empty fields shows required field errors",
+      "username": "",
+      "password": "",
+      "expectedLoggedIn": false,
+      "expectedErrorMessage": "Username and password are required"
+    }
+  ],
+  "pageContent": [
+    {
+      "testCaseId": "HP_CONTENT_001",
+      "description": "Homepage loads with correct title",
+      "expectedTitle": "Welcome | AMC Software",
+      "expectedHeaderText": "Discover Our Products",
+      "expectedBannerVisible": true
+    },
+    {
+      "testCaseId": "HP_CONTENT_002",
+      "description": "Featured section displays at least one item",
+      "section": "featured",
+      "expectedItemsVisible": true,
+      "expectedMinItems": 1
+    },
+    {
+      "testCaseId": "HP_CONTENT_003",
+      "description": "Footer contains copyright text",
+      "section": "footer",
+      "expectedText": "© 2026 AMC Software. All rights reserved."
+    }
+  ]
+}

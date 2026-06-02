@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Selenium Automation Suite" verbose="1">
+    <parameter name="browser" value="chrome"></parameter>
+
+    <listeners>
+        <listener class-name="com.amcsoftwae.listeners.TestListener"/>
+    </listeners>
+
+    <test name="Regression Tests" preserve-order="true">
+        <classes>
+            <class name="com.amcsoftwae.tescases.HomePageTest"/>
+        </classes>
+    </test>
+
+
+</suite>

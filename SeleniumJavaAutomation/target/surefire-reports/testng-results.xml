@@ -1,17 +1,205 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-31T23:39:03 EDT" name="com.amcsoftware.AppTest" finished-at="2026-05-31T23:39:03 EDT" duration-ms="51">
+  <suite started-at="2026-06-01T21:39:18 EDT" name="Selenium Automation Suite" finished-at="2026-06-01T21:40:19 EDT" duration-ms="60611">
     <groups>
     </groups>
-    <test started-at="2026-05-31T23:39:03 EDT" name="Command line test" finished-at="2026-05-31T23:39:03 EDT" duration-ms="51">
-      <class name="com.amcsoftware.AppTest">
-        <test-method signature="shouldAnswerWithTrue()[pri:0, instance:com.amcsoftware.AppTest@de3a06f]" started-at="2026-05-31T23:39:03 EDT" name="shouldAnswerWithTrue" finished-at="2026-05-31T23:39:03 EDT" duration-ms="3" status="PASS">
+    <test started-at="2026-06-01T21:39:18 EDT" name="Regression Tests" finished-at="2026-06-01T21:40:19 EDT" duration-ms="60611">
+      <class name="com.amcsoftwae.tescases.HomePageTest">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.amcsoftwae.tescases.HomePageTest@2766ca9d]" started-at="2026-06-01T21:39:18 EDT" name="beforeSuite" finished-at="2026-06-01T21:39:18 EDT" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- shouldAnswerWithTrue -->
-      </class> <!-- com.amcsoftware.AppTest -->
-    </test> <!-- Command line test -->
-  </suite> <!-- com.amcsoftware.AppTest -->
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.amcsoftwae.tescases.HomePageTest@2766ca9d]" started-at="2026-06-01T21:39:18 EDT" name="beforeClass" finished-at="2026-06-01T21:39:18 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.amcsoftwae.tescases.HomePageTest@2766ca9d]" started-at="2026-06-01T21:39:18 EDT" name="setup" finished-at="2026-06-01T21:39:21 EDT" duration-ms="2730" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="failTest()[pri:0, instance:com.amcsoftwae.tescases.HomePageTest@2766ca9d]" started-at="2026-06-01T21:39:21 EDT" name="failTest" finished-at="2026-06-01T21:39:21 EDT" duration-ms="14" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at com.amcsoftwae.tescases.HomePageTest.failTest(HomePageTest.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.amcsoftwae.tescases.HomePageTest@2766ca9d]" started-at="2026-06-01T21:39:21 EDT" name="teardown" finished-at="2026-06-01T21:39:21 EDT" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.amcsoftwae.tescases.HomePageTest@2766ca9d]" started-at="2026-06-01T21:39:21 EDT" name="setup" finished-at="2026-06-01T21:39:23 EDT" duration-ms="1700" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="googleTest()[pri:0, instance:com.amcsoftwae.tescases.HomePageTest@2766ca9d]" started-at="2026-06-01T21:39:23 EDT" name="googleTest" finished-at="2026-06-01T21:39:32 EDT" duration-ms="8871" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.amcsoftwae.tescases.HomePageTest@2766ca9d]" started-at="2026-06-01T21:39:32 EDT" name="teardown" finished-at="2026-06-01T21:39:32 EDT" duration-ms="101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.amcsoftwae.tescases.HomePageTest@2766ca9d]" started-at="2026-06-01T21:39:32 EDT" name="setup" finished-at="2026-06-01T21:39:33 EDT" duration-ms="856" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testHomePage(com.amcsoftware.models.LoginItem)[pri:0, instance:com.amcsoftwae.tescases.HomePageTest@2766ca9d]" started-at="2026-06-01T21:39:33 EDT" name="testHomePage" data-provider="loginData" finished-at="2026-06-01T21:39:43 EDT" duration-ms="10250" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.amcsoftware.models.LoginItem@f339eae]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHomePage -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.amcsoftwae.tescases.HomePageTest@2766ca9d]" started-at="2026-06-01T21:39:43 EDT" name="teardown" finished-at="2026-06-01T21:39:43 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.amcsoftwae.tescases.HomePageTest@2766ca9d]" started-at="2026-06-01T21:39:43 EDT" name="setup" finished-at="2026-06-01T21:39:44 EDT" duration-ms="798" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testHomePage(com.amcsoftware.models.LoginItem)[pri:0, instance:com.amcsoftwae.tescases.HomePageTest@2766ca9d]" started-at="2026-06-01T21:39:44 EDT" name="testHomePage" data-provider="loginData" finished-at="2026-06-01T21:39:54 EDT" duration-ms="10592" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.amcsoftware.models.LoginItem@35636217]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHomePage -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.amcsoftwae.tescases.HomePageTest@2766ca9d]" started-at="2026-06-01T21:39:54 EDT" name="setup" finished-at="2026-06-01T21:39:55 EDT" duration-ms="834" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.amcsoftwae.tescases.HomePageTest@2766ca9d]" started-at="2026-06-01T21:39:54 EDT" name="teardown" finished-at="2026-06-01T21:39:54 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="testHomePage(com.amcsoftware.models.LoginItem)[pri:0, instance:com.amcsoftwae.tescases.HomePageTest@2766ca9d]" started-at="2026-06-01T21:39:55 EDT" name="testHomePage" data-provider="loginData" finished-at="2026-06-01T21:40:07 EDT" duration-ms="11942" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.amcsoftware.models.LoginItem@6c03fb16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHomePage -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.amcsoftwae.tescases.HomePageTest@2766ca9d]" started-at="2026-06-01T21:40:07 EDT" name="teardown" finished-at="2026-06-01T21:40:07 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.amcsoftwae.tescases.HomePageTest@2766ca9d]" started-at="2026-06-01T21:40:07 EDT" name="setup" finished-at="2026-06-01T21:40:08 EDT" duration-ms="810" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testHomePage(com.amcsoftware.models.LoginItem)[pri:0, instance:com.amcsoftwae.tescases.HomePageTest@2766ca9d]" started-at="2026-06-01T21:40:08 EDT" name="testHomePage" data-provider="loginData" finished-at="2026-06-01T21:40:19 EDT" duration-ms="10860" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.amcsoftware.models.LoginItem@7fd69dd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHomePage -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.amcsoftwae.tescases.HomePageTest@2766ca9d]" started-at="2026-06-01T21:40:19 EDT" name="teardown" finished-at="2026-06-01T21:40:19 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.amcsoftwae.tescases.HomePageTest -->
+    </test> <!-- Regression Tests -->
+  </suite> <!-- Selenium Automation Suite -->
 </testng-results>

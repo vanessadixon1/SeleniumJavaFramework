@@ -1,1 +1,3 @@
-com/amcsoftware/App.class
+com/amcsoftware/driver/DriverFactory.class
+com/amcsoftware/pages/HomePage.class
+com/amcsoftware/pages/BasePage.class

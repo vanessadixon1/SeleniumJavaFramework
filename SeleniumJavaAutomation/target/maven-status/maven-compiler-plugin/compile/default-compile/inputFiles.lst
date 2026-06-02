@@ -1,1 +1,10 @@
-/Users/VanessaDixon/Documents/InterviewReady/SeleniumJavaFramework/SeleniumJavaAutomation/src/main/java/com/amcsoftware/App.java
+/Users/VanessaDixon/Documents/InterviewReady/SeleniumJavaFramework/SeleniumJavaAutomation/src/main/java/com/amcsoftware/utils/JsonReader.java
+/Users/VanessaDixon/Documents/InterviewReady/SeleniumJavaFramework/SeleniumJavaAutomation/src/main/java/com/amcsoftware/models/NavigationItem.java
+/Users/VanessaDixon/Documents/InterviewReady/SeleniumJavaFramework/SeleniumJavaAutomation/src/main/java/com/amcsoftware/models/Homepage.java
+/Users/VanessaDixon/Documents/InterviewReady/SeleniumJavaFramework/SeleniumJavaAutomation/src/main/java/com/amcsoftware/utils/ExtentManager.java
+/Users/VanessaDixon/Documents/InterviewReady/SeleniumJavaFramework/SeleniumJavaAutomation/src/main/java/com/amcsoftware/models/HomePageItem.java
+/Users/VanessaDixon/Documents/InterviewReady/SeleniumJavaFramework/SeleniumJavaAutomation/src/main/java/com/amcsoftware/models/PageContentItem.java
+/Users/VanessaDixon/Documents/InterviewReady/SeleniumJavaFramework/SeleniumJavaAutomation/src/main/java/com/amcsoftware/pages/HomePage.java
+/Users/VanessaDixon/Documents/InterviewReady/SeleniumJavaFramework/SeleniumJavaAutomation/src/main/java/com/amcsoftware/driver/DriverFactory.java
+/Users/VanessaDixon/Documents/InterviewReady/SeleniumJavaFramework/SeleniumJavaAutomation/src/main/java/com/amcsoftware/models/LoginItem.java
+/Users/VanessaDixon/Documents/InterviewReady/SeleniumJavaFramework/SeleniumJavaAutomation/src/main/java/com/amcsoftware/pages/BasePage.java
